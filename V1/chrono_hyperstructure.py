@@ -91,11 +91,11 @@ def run_simulation_3d(runtime_seconds=10, field_sizes=20):
     print(f"Simulation completed. Data saved at: {path}")
 
 
-# === Ausführung ===
+# === Execution ===
 if __name__ == "__main__":
     try:
         runtime = float(input("Enter the desired runtime in seconds: "))
         field_size = int(input("Enter the desired field size (e.g. 20): "))
         run_simulation_3d(runtime_seconds=runtime, field_sizes=field_size)
     except Exception as e:
-        print("Fehlerhafte Eingabe:", e)
+        print("Incorrect entry:", e)
